@@ -18,8 +18,8 @@ export default function Signin() {
        
 
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-800">
-            Sign in to your account
+          <h2 className="mt-10 font-bold text-center text-2xl font-bold leading-9 tracking-tight text-gray-800">
+            SignIn to your account
           </h2>
         </div>
 
@@ -28,7 +28,7 @@ export default function Signin() {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-800"
+                className="block font-bold text-sm font-medium leading-6 text-gray-800"
               >
                 Email address
               </label>
@@ -49,7 +49,7 @@ export default function Signin() {
               <div className="flex items-center justify-between">
                 <label
                   htmlFor="password"
-                  className="block text-sm font-medium leading-6 text-gray-800"
+                  className="block font-bold text-sm font-medium leading-6 text-gray-800"
                 >
                   Password
                 </label>
@@ -86,7 +86,7 @@ export default function Signin() {
                   })
                 }
                 disabled={!email || !password}
-                className="cursor-pointer disabled:opacity-40 flex w-full justify-center rounded-lg bg-black px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+                className="cursor-pointer disabled:opacity-60 flex w-full justify-center rounded-lg bg-black px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-black-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
               >
                 Sign in
               </button>

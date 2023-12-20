@@ -9,6 +9,9 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full bg-gray-900">
+      <head>
+        <title>Giphy</title>
+      </head>
       <body className="h-full">
       <SessionProvider>
         {children}

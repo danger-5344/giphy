@@ -79,7 +79,12 @@ const GiphySearch: React.FC = () => {
       <div className="bg bg3"></div>
 
       <div className="min-h-screen flex  flex-col items-center justify-center py-6 px-4 sm:px-6 lg:px-8">
-        
+      <img
+          className="logo"
+          src="https://res.cloudinary.com/zenbusiness/image/upload/v1670445040/logaster/logaster-2020-08-gipsi-gif-logo.gif"
+          width={144}
+          alt="logo"
+        />
         <div className="max-w-4xl w-full space-y-8 p-8 bg-gray-100 rounded-lg shadow-md">
           <div className="flex justify-between">
             <div className="relative flex-grow">
@@ -114,14 +119,35 @@ const GiphySearch: React.FC = () => {
             <button
               onClick={handlePrevious}
               disabled={offset === 0}
-              className="bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-lg shadow-sm disabled:opacity-40 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 mr-2"
+              className="bg-white text-gray-800 font-semibold mx-1 py-2 px-4 border border-gray-400 rounded-lg shadow-sm disabled:opacity-40 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 mr-2"
             >
               ⬅️ Previous
             </button>
             <button
               onClick={handleNext}
               disabled={offset + limit >= gifs.length}
-              className="bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-lg shadow-sm disabled:opacity-40 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              className="bg-white text-gray-800 font-semibold mx-1 py-2 px-4 border border-gray-400 rounded-lg shadow-sm disabled:opacity-40 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            >
+              1
+            </button>
+            <button
+              onClick={handleNext}
+              disabled={offset + limit >= gifs.length}
+              className="bg-white text-gray-800 font-semibold mx-1 py-2 px-4 border border-gray-400 rounded-lg shadow-sm disabled:opacity-40 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            >
+             2
+            </button>
+            <button
+              onClick={handleNext}
+              disabled={offset + limit >= gifs.length}
+              className="bg-white text-gray-800 font-semibold mx-1 py-2 px-4 border border-gray-400 rounded-lg shadow-sm disabled:opacity-40 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            >
+              3
+            </button>
+            <button
+              onClick={handleNext}
+              disabled={offset + limit >= gifs.length}
+              className="bg-white text-gray-800 font-semibold mx-2 py-2 px-4 border border-gray-400 rounded-lg shadow-sm disabled:opacity-40 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
             >
               Next ➡️
             </button>
@@ -129,7 +155,7 @@ const GiphySearch: React.FC = () => {
         </div>
 
         <button
-          className="text-white mt-4 bg-red-500 hover:bg-red-600 py-2 px-4 rounded-lg"
+          className="text-white mt-4 bg-black hover:bg-red-600 py-2 px-4 rounded-lg"
           onClick={handleSignOut}
         >
           Logout
